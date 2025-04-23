@@ -199,7 +199,7 @@ Let's all test whether we can use the package. If you cannot, or if you just wan
 Log in to the cluster and request an interactive session on the htc cluster specifically.
 
 ```
-srun -t 2:00:00 --cluster htc --partition htc --cpus-per-task 16 --pty bash
+srun -t 2:00:00 --cluster smp --partition high-mem -n1 --pty bash
 ```
 
 To run the ```dimelo``` package, we need to load ```python``` because the package is written in ```python```. 
